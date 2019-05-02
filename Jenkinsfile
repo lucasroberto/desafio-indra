@@ -1,8 +1,16 @@
-    stage ('Checkout') {
-      deleteDir()
-      checkout scm
+pipeline{
+    agent any
+    
+    stages('Build'){
+        steps{
+            echo 'Building'
+            git 'https://github.com/lucasroberto/desafio-indra'
+        }
     }
-stage ('Build and Archive'){
-    sh 'virtualenv env; cd env/Scripts/activate ; python -m Pyautomators '
-    step([$class: Artifacts , artifacts: 'desafio-indra/build/outputs/apk/desaio-indra.apk'])
-}
+    stages('Test'){
+        steps{
+            sh 'virutalenv env ; cd env\Scripts\activate'
+            sh 'cd lucasroberto/desafio-indra/Hello-Desafio'
+            sh 'python -m Pyautomators -f json -o .\hello-desafio.json'
+        }
+    }
