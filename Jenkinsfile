@@ -12,6 +12,6 @@ pipeline{
             sh 'virutalenv env'
             sh 'cd env/Scripts/activate'
             sh 'cd lucasroberto/desafio-indra/Hello-Desafio'
-            sh 'python -m Pyautomators -f json -o .\hello-desafio.json'
+            sh 'python -m Pyautomators -f json -o ./hello-desafio.json'
         }
     }
