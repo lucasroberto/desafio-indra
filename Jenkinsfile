@@ -17,7 +17,7 @@ pipeline{
                 virtualenv env
                 env//Scripts//activate
                 lucasroberto/desafio-indra/Hello-Desafio
-                python -m Pyautomators -f json -o .U+005Chello-desafio.json
+                python -m Pyautomators -f json -o .//hello-desafio.json
                 '''
             }
         }
