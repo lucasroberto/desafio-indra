@@ -16,7 +16,6 @@ pipeline{
                 pip install virtualenv
                 virtualenv env
                 env//Scripts//activate
-                lucasroberto/desafio-indra/Hello-Desafio
                 python -m Pyautomators -f json -o .//hello-desafio.json
                 '''
             }
