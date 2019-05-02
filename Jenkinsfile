@@ -26,7 +26,7 @@ pipeline{
                 python -m Pyautomators -f json -o .//enviar.json
                 '''
                 bat '''
-                cd Desafio2
+                cd envn
                 python -m Pyautomators -f json -o .//desafio2.json
                 '''
             }
