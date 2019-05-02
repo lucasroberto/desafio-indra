@@ -19,7 +19,7 @@ class Home:
     def filtrar(self):
         refinar = self.driver.find_element_by_xpath('//*[@id="sort-bar"]/div/aside/div/div[3]/span/form/div/div/select')
         refinar.click()
-        time.sleep(2)
+        self.driver.implicitly_wait(1)
         menor = self.driver.find_element_by_xpath('//*[@id="sort-bar"]/div/aside/div/div[3]/span/form/div/div/select/option[1]')
         menor.click()
        
