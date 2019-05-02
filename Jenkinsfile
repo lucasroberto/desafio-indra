@@ -1,14 +1,13 @@
 #!groovy
 pipeline{
     agent any
-    
-    stage ('Build'){
+    stage ("Build"){
         steps{
             echo 'Building'
             git 'github.com/lucasroberto/desafio-indra'
         }
     }
-     stage ('Test'){
+    stage ("Test"){
         steps{
             bat 'virutalenv env'
             bat 'cd env/Scripts/activate'
