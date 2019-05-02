@@ -1,5 +1,3 @@
-import time
-
 class Home:
     
     def __init__(self,driver):
