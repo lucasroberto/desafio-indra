@@ -11,11 +11,11 @@ pipeline{
         stage ("Test"){
             steps{
                 bat '''
-                pip install python-jenkins'
+                pip install python-jenkins
                 python -m pip install --upgrade pip
                 pip install virtualenv
                 virtualenv env
-                envU+005CScriptsU+005Cactivate
+                env\Scripts\activate
                 cd lucasroberto/desafio-indra/Hello-Desafio
                 python -m Pyautomators -f json -o .U+005Chello-desafio.json
                 '''
