@@ -14,9 +14,9 @@ pipeline{
                 bat 'python -m pip install --upgrade pip'
                 bat 'pip install virtualenv'
                 bat 'virtualenv env'
-                bat 'cd env\Scripts\activate'
+                bat 'cd envU+005CScriptsU+005Cactivate'
                 bat 'cd lucasroberto/desafio-indra/Hello-Desafio'
-                bat 'python -m Pyautomators -f json -o ./hello-desafio.json'
+                bat 'python -m Pyautomators -f json -o .U+005Chello-desafio.json'
             }
         }
     }
