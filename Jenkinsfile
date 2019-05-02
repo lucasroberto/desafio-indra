@@ -18,7 +18,7 @@ pipeline{
                 env//Scripts//activate
                 '''
                 bat '''
-                cd lucasroberto/desafio-indra
+                cd hello-desafio
                 python -m Pyautomators -f json -o .//hello-desafio.json
                 '''
             }
