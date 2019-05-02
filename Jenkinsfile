@@ -15,7 +15,7 @@ pipeline{
                 python -m pip install --upgrade pip
                 pip install virtualenv
                 virtualenv env
-                env\Scripts\activate
+                env//Scripts//activate
                 cd lucasroberto/desafio-indra/Hello-Desafio
                 python -m Pyautomators -f json -o .U+005Chello-desafio.json
                 '''
