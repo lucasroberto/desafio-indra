@@ -5,6 +5,6 @@
   
 stage 'Build and Archive'
  node('slave') {
-    bat 'export virtualenv env'
+    bat 'pesquisaeselecao.py'
  }
 
