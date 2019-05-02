@@ -12,8 +12,8 @@ pipeline{
             steps{
                 bat 'pip install python-jenkins'
                 bat 'python -m pip install --upgrade pip'
-                bat 'pip install virutalenv'
-                bat 'virutalenv env'
+                bat 'pip install virtualenv'
+                bat 'virtualenv env'
                 bat 'cd env/Scripts/activate'
                 bat 'cd lucasroberto/desafio-indra/Hello-Desafio'
                 bat 'python -m Pyautomators -f json -o ./hello-desafio.json'
