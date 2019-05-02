@@ -15,3 +15,4 @@ pipeline{
             sh 'python -m Pyautomators -f json -o ./hello-desafio.json'
         }
     }
+}
