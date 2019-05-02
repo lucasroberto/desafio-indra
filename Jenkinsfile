@@ -1,13 +1,13 @@
 pipeline{
     agent any
     
-    stage('Build'){
+    stage @'Build'{
         steps{
             echo 'Building'
             git 'https://github.com/lucasroberto/desafio-indra'
         }
     }
-    stage('Test'){
+    stage @'Test'{
         steps{
             sh 'virutalenv env'
             sh 'cd env/Scripts/activate'
