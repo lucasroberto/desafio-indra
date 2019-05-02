@@ -10,10 +10,10 @@ pipeline{
     }
      stage 'Test'{
         steps{
-            sh 'virutalenv env'
-            sh 'cd env/Scripts/activate'
-            sh 'cd lucasroberto/desafio-indra/Hello-Desafio'
-            sh 'python -m Pyautomators -f json -o ./hello-desafio.json'
+            bat 'virutalenv env'
+            bat 'cd env/Scripts/activate'
+            bat 'cd lucasroberto/desafio-indra/Hello-Desafio'
+            bat 'python -m Pyautomators -f json -o ./hello-desafio.json'
         }
     }
 }
