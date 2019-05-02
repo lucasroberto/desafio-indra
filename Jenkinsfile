@@ -11,7 +11,7 @@ pipeline{
         stage ("Test"){
             steps{
                 bat 'pip install python-jenkins'
-                bat 'virutalenv-jenkins'
+                bat 'pip install virutalenv-jenkins'
                 bat 'virutalenv env'
                 bat 'cd env/Scripts/activate'
                 bat 'cd lucasroberto/desafio-indra/Hello-Desafio'
