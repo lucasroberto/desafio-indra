@@ -22,7 +22,7 @@ pipeline{
                 python -m Pyautomators -f json -o .//hello-desafio.json
                 '''
                 bat '''
-                cd desafio2
+                cd Desafio2
                 python -m Pyautomators -f json -o .//desafio2.json
                 '''
                 bat '''
