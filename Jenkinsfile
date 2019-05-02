@@ -1,6 +1,6 @@
 #!groovy
 pipeline{
-    agent python
+    agent any
     stages {
         stage ("Build"){
             steps{
@@ -10,6 +10,7 @@ pipeline{
         }
         stage ("Test"){
             steps{
+                bat 'pip install python'
                 bat 'virutalenv env'
                 bat 'cd env/Scripts/activate'
                 bat 'cd lucasroberto/desafio-indra/Hello-Desafio'
