@@ -25,7 +25,7 @@ pipeline{
                 bat '''
                 cd enviar
                 python -m Pyautomators -f json -o .//enviar.json
-                    '''
+                '''
                 bat '''
                 cd hello-diadasmaes
                 python -m Pyautomators -f json -o .//diadasmaes.json
