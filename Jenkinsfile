@@ -16,6 +16,7 @@ pipeline{
                 pip install virtualenv
                 virtualenv env
                 env//Scripts//activate
+                '''
                 
                 bat '''
                 cd hello-desafio
